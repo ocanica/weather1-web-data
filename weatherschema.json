@@ -1,0 +1,56 @@
+{
+
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "UK City Weather",
+    "description": "Weather updates from across the United Kingdom",
+
+    "type": "object",
+    "properties": {
+        "weather_arr": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+
+                    "city_obj": {
+                        "type": "object",
+                        "properties": {
+                            "city_id": {"type": "number", "minimum": 0.00},
+                            "city_name": {"type": "string"}
+                        },
+                        "required":["city_id","city_name"]
+                    },
+
+                    "current_conditions": {
+                        "type": "string",
+                        "enum": [
+                            "cloud", "hail", "heavy cloud", "heavy rain", "rain", "sleet", "snow", "sun and cloud", "sun", "thunderstorm" 
+                        ]
+                    },
+
+                    "temperature": {"type": "number"},
+
+                    "wind_obj": {
+                        "type": "object",
+                        "properties": {
+                            "wind_speed": {"type": "number", "minimum": 0.00},
+                            "wind_direction": {
+                                "type": "string",
+                                "enum": [ 
+                                    "Southerly", "South Westerly", "Westerly", "North Westerly", "Northerly", "North Easterly", "Easterly", "South Easterly"
+                                ]
+                            }, 
+
+                            "wind_chill_factor": {"type":"number", "minimum": 0.00}
+                        },
+
+                        "required":["wind_speed","wind_direction","wind_chill_factor"]
+                    }
+                },
+                
+                "required": ["current_conditions","temperature"]
+            }
+        }
+    }                
+
+}

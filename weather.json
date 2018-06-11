@@ -1,0 +1,103 @@
+{
+    "weather_arr": [
+
+        {
+            "city_obj": {
+                "city_id": 1,
+                "city_name": "London"
+            },
+            "current_conditions": "heavy cloud",
+            "temperature": 12,
+            "wind_obj": {
+                "wind_speed": 20,
+                "wind_direction": "North Westerly",
+                "wind_chill_factor": 7
+            }
+        },
+
+        {
+            "city_obj": {
+                "city_id": 2,
+                "city_name": "Edinburgh"
+            },
+            "current_conditions": "sun and cloud",
+            "temperature": 13,
+            "wind_obj": {
+                "wind_speed": 14,
+                "wind_direction": "South Westerly",
+                "wind_chill_factor": 10
+            }
+        },
+
+        {
+            "city_obj": {
+                "city_id": 2,
+                "city_name": "Belfast"
+            },
+            "current_conditions": "sun",
+            "temperature": 15,
+            "wind_obj": {
+                "wind_speed": 7,
+                "wind_direction": "Westerly",
+                "wind_chill_factor": 12
+            }
+        },
+
+        {
+            "city_obj": {
+                "city_id": 3,
+                "city_name": "Bournemouth"
+            },
+            "current_conditions": "rain",
+            "temperature": 11,
+            "wind_obj": {
+                "wind_speed": 13,
+                "wind_direction": "North Easterly",
+                "wind_chill_factor": 6
+            }
+        },
+
+        {
+            "city_obj": {
+                "city_id": 4,
+                "city_name": "Manchester"
+            },
+            "current_conditions": "sun",
+            "temperature": 17,
+            "wind_obj": {
+                "wind_speed": 4,
+                "wind_direction": "South Easterly",
+                "wind_chill_factor": 15
+            }
+        },
+
+        {
+            "city_obj": {
+                "city_id": 5,
+                "city_name": "York"
+            },
+            "current_conditions": "thunderstorm",
+            "temperature": 10,
+            "wind_obj": {
+                "wind_speed": 17,
+                "wind_direction": "Northerly",
+                "wind_chill_factor": 8
+            }
+        },
+
+        {
+            "city_obj": {
+                "city_id": 6,
+                "city_name": "Coventry"
+            },
+            "current_conditions": "heavy rain",
+            "temperature": 8,
+            "wind_obj": {
+                "wind_speed": 8,
+                "wind_direction": "Easterly",
+                "wind_chill_factor": 4
+            }
+        }
+
+    ]
+}
